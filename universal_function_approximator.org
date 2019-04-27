@@ -17,6 +17,6 @@
 ** Neuronal activation
  - Each neuron has an *input* multiplied by a *weight*, then added to a *bias* term and finally passed through an *activation* function
  - The activation function creates a threshold to allow an output from the neuron
- - The weight term inflates the effect of the input on the decision boundary, each input value carries *weight* decision power, higher the weight, smaller the gap between activating and non-activating inputs
+ - The weight term inflates the effect of the input on the decision boundary, it decides how much change occurs in the decision boundary for a small change in input values
  - The bias decides which values of the input are favoured for the decision boundary
  - Essentially both together they decide the step location for the activation of the neuron
