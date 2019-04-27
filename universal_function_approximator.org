@@ -1,5 +1,5 @@
 * Neural Networks as universal function approximators [[http://neuralnetworksanddeeplearning.com/chap4.html][source]]
 ** Neural Networks can approximate any function to arbitrary precision
- - For any given function, there is guaranteed to be a neural network that, for any given **x**, can output __f__(**x**) or a close approximation to it
- - It holds for all **smooth** functions with arbitrary number of inputs and outputs
+ - For any given function, there is guaranteed to be a neural network that, for any given *x*, can output _f_(*x*) or a close approximation to it
+ - It holds for all *smooth* functions with arbitrary number of inputs and outputs
  - 
