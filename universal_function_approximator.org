@@ -2,4 +2,21 @@
 ** Neural Networks can approximate any function to arbitrary precision
  - For any given function, there is guaranteed to be a neural network that, for any given =x=, can output =f(x)= or a close approximation to it
  - It holds for all *smooth* functions with arbitrary number of inputs and outputs
- - 
+ - It holds for an architecture with a single hidden layer
+ - Almost any process can be thought of as a function computation, taking inputs and producing outputs. In principle, any process can be approximated by a neural network
+
+** Caveats
+ - The guarantee is that with enough hidden layer neurons we can approximate any function such that =g(x) - f(x) < e= where =x= can be any input, =f(x)= is known output, =g(x)= is output from the network and =e= is the permissible error
+ - neural networks can only approximate *continuous functions*. This makes sense as the network is computing only a continuous function of the input.
+ - We often estimate discontinuous functions with continuous ones
+
+** Guaranteed to exist, not to be found
+ - Just because a neural network exists does not mean we can construct, find or recognise it
+ - We need to iterate over techniques and architectures to find better networks
+
+** Neuronal activation
+ - Each neuron has an *input* multiplied by a *weight*, then added to a *bias* term and finally passed through an *activation* function
+ - The activation function creates a threshold to allow an output from the neuron
+ - The weight term inflates the effect of the input on the decision boundary, each input value carries *weight* decision power, higher the weight, smaller the gap between activating and non-activating inputs
+ - The bias decides which values of the input are favoured for the decision boundary
+ - Essentially both together they decide the step location for the activation of the neuron
